@@ -1,0 +1,39 @@
+.SidebarOption {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  padding: 0 10px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  cursor: pointer;
+  color: gray;
+}
+
+.SidebarOption > h3 {
+  flex: 1;
+  margin-left: 10px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.SidebarOption > p {
+  display: none;
+  font-weight: 300;
+}
+
+.SidebarOption:hover > p {
+  display: block;
+}
+.SidebarOption--active > p {
+  display: inline;
+}
+
+.SidebarOption:hover,
+.SidebarOption:hover > p,
+.SidebarOption:hover > h3,
+.SidebarOption--active > p,
+.SidebarOption--active > h3,
+.SidebarOption--active {
+  background-color: #fcececec;
+  color: #c04b37;
+}
